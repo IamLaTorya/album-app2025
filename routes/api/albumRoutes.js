@@ -7,7 +7,8 @@ const { albumDao: dao } = require('../../daos/dao')
 //http://localhost:3000/api/album
 router.get('/', (req, res)=>
 {
-    dao.findAll(req, res, dao.table)//callback function
+    //dao.findAll(req, res, dao.table)//callback function
+    dao.findAlbumInfo(res, dao.table)
 })
 
 router.get('/sort/:sorter', (req, res)=>
