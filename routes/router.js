@@ -9,11 +9,13 @@ router.get('/api', (req, res)=>
     //res.send('album api')//this checks to see if the api works
     res.json(
     {
-        'All Albums': `http://localhost:${port}/api/album`
+        'All Albums': `http://localhost:${port}/api/album`,
+        'All Artists': `http://localhost:${port}/api/artist`
     })
 })
 
 router.use('/api/album', require('./api/albumRoutes'))
+router.use('/api/artist', require('./api/artistRoutes'))
 
 //error handling
 router.use((req, res, next)=>

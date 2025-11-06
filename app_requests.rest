@@ -1,4 +1,13 @@
 # GET http://localhost:3000/api/album
 
 # GET single album
-GET http://localhost:3000/api/album/4
+# GET http://localhost:3000/api/album/4
+
+# GET artist
+# GET http://localhost:3000/api/artist
+
+# GET artist sorted by first name
+# GET http://localhost:3000/api/artist/sort/fName
+
+# GET single artist
+# GET http://localhost:3000/api/artist/3

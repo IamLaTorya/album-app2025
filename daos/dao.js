@@ -6,7 +6,14 @@ const albumDao =
     ...require('./api/albumDao')
 }
 
+const artistDao = 
+{
+    ...daoCommon,
+    ...require('./api/artistDao')
+}
+
 module.exports = 
 {
-    albumDao
+    albumDao,
+    artistDao
 }
