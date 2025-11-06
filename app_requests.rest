@@ -11,3 +11,10 @@
 
 # GET single artist
 # GET http://localhost:3000/api/artist/3
+
+# GET band
+# GET http://localhost:3000/api/band/
+
+# GET single band
+# GET http://localhost:3000/api/band/5
+

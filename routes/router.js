@@ -10,14 +10,16 @@ router.get('/api', (req, res)=>
     res.json(
     {
         'All Albums': `http://localhost:${port}/api/album`,
-        'All Artists': `http://localhost:${port}/api/artist`
+        'All Artists': `http://localhost:${port}/api/artist`,
+        'All Bands': `http://localhost:${port}/api/band`
     })
 })
 
 const endpoints = 
 [
     'album',
-    'artist'
+    'artist',
+    'band'
 ]
 
 // router.use('/api/album', require('./api/albumRoutes'))
