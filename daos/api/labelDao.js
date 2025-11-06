@@ -1,6 +1,6 @@
 const con = require('../../config/dbconfig')
 
-const bandDao = 
+const labelDao = 
 {
     table: 'artist'
 
@@ -8,4 +8,4 @@ const bandDao =
     
 }
 
-module.exports = bandDao
+module.exports = labelDao

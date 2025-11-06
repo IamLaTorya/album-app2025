@@ -18,3 +18,8 @@
 # GET single band
 # GET http://localhost:3000/api/band/5
 
+# GET label
+# GET http://localhost:3000/api/label
+
+# GET sing label
+GET http://localhost:3000/api/label/6
