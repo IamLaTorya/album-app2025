@@ -14,8 +14,18 @@ router.get('/api', (req, res)=>
     })
 })
 
-router.use('/api/album', require('./api/albumRoutes'))
-router.use('/api/artist', require('./api/artistRoutes'))
+const endpoints = 
+[
+    'album',
+    'artist'
+]
+
+// router.use('/api/album', require('./api/albumRoutes'))
+// router.use('/api/artist', require('./api/artistRoutes'))
+endpoints.forEach(endpoint =>
+{
+    router.use(`/api/${endpoint}`, require(`./api/${endpoint}Routes`))
+})
 
 //error handling
 router.use((req, res, next)=>
