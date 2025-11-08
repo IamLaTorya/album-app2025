@@ -22,4 +22,6 @@
 # GET http://localhost:3000/api/label
 
 # GET sing label
-GET http://localhost:3000/api/label/6
+# GET http://localhost:3000/api/label/6
+
+GET http://localhost:3000/api/album/get_albums/3

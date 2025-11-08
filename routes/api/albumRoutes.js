@@ -11,6 +11,11 @@ router.get('/', (req, res)=>
     dao.findAlbumInfo(res, dao.table)
 })
 
+router.get('/get_albums/:id', (req, res)=>
+{
+    dao.findAlbumByArtistId(res, dao.table, req.params.id)
+})
+
 router.get('/sort/:sorter', (req, res)=>
 {
     dao.sort(res, dao.table, req.params.sorter)

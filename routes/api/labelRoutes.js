@@ -8,6 +8,12 @@ router.get('/', (req, res)=>
     //dao.findAll(req, res, dao.table)//callback function
     dao.findAll(req, res, dao.table)
 })
+
+router.get('/get_albums/:id', (req, res)=>
+{
+    dao.findAlbumsByLabel(res, dao.table, req.params.id)
+})
+
 //http://localhost:3000/api/label/sort/:sor
 router.get('/sort/:sorter', (req, res)=>
 {
