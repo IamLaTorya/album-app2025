@@ -15,13 +15,27 @@
 # GET band
 # GET http://localhost:3000/api/band/
 
+# GET band sorted by band id
+# GET http://localhost:3000/api/band/band_id
+
 # GET single band
 # GET http://localhost:3000/api/band/5
 
 # GET label
 # GET http://localhost:3000/api/label
 
-# GET sing label
-# GET http://localhost:3000/api/label/6
+# GET label sorted by label id
+#  GET http://localhost:3000/api/label/sort/label_id
 
-GET http://localhost:3000/api/album/get_albums/3
+# GET single label
+#  GET http://localhost:300/api/label/4
+
+# GET http://localhost:3000/api/album/get_albums/3
+
+# 
+# POST http://localhost:3000/api/artist/create
+# Content-Type: application/json
+# {
+#     "fName": "michael",
+#     "lName": "jackson"
+# }
