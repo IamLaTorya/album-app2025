@@ -3,6 +3,16 @@ const express = require('express')
 const router = express.Router()
 const port = process.env.port || 3000
 
+//HOME PAGE => http://localhost:3000
+router.get('/', (req, res)=>
+{
+    res.render('pages/home', 
+    {
+        title: 'album-app home',
+        name: "LaTorya's Album App"
+    })
+})
+
 //Root route => http://localhost:3000/api
 router.get('/api', (req, res)=>
 {
@@ -35,6 +45,11 @@ endpoints.forEach(endpoint =>
 router.use((req, res, next)=>
 {
     res.status(404)
-    .send('<h1>404 Error This page does not exist!</h>')
+    // .send('<h1>404 Error This page does not exist!</h>')
+    .render('pages/error', 
+    {
+        title: 'Error Page',
+        name: 'Error'
+    })
 })
 module.exports = router                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

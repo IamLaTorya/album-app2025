@@ -26,7 +26,10 @@ server.use(cors())
 server.use(express.json())
 server.use(express.urlencoded({ extended: true}))
 
+//Hey, I'm setting ejs as my view engine!
+server.set('view engine', 'ejs')
+
 //localhost:3000
 server.use('/', router)//this code will cause a crash until you export your router
 
-server.listen(port, ()=> console.log('The Dodgers won the 2025 World Series!!')) 
+server.listen(port, ()=> console.log(`The Dodgers won the 2025 World Series!! Oh and the port is ${port}`)) 
